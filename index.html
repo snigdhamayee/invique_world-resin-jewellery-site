@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invique_world - Resin Jewellery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo.jpg" alt="Invique_world" width="40" height="40" class="me-2">
+        <span>Invique_world</span>
+      </a>
+      <button class="btn btn-outline-light ms-auto" id="cartBtn">🛒 Cart (<span id="cartCount">0</span>)</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero text-center text-white d-flex align-items-center justify-content-center">
+    <div>
+      <h1 class="display-5 fw-bold">✨ Handcrafted Resin Jewellery ✨</h1>
+      <p class="lead">Elegant designs for every occasion</p>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <div class="container mt-5">
+    <ul class="nav nav-pills justify-content-center mb-4" id="categoryTabs">
+      <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#ringsTab">Rings</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#earringsTab">Earrings</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#pendantsTab">Pendants</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#braceletsTab">Bracelets</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#keychainsTab">Keychains</a></li>
+    </ul>
+
+    <div class="tab-content">
+
+      <!-- Rings -->
+      <div class="tab-pane fade show active" id="ringsTab">
+        <div class="row" id="ringsRow"></div>
+        <div class="row mt-4" id="ringsProducts" style="display:none;"></div>
+      </div>
+
+      <!-- Earrings -->
+      <div class="tab-pane fade" id="earringsTab">
+        <div class="row" id="earringsSubcategories"></div>
+        <div class="row mt-4" id="earringsProducts" style="display:none;"></div>
+      </div>
+
+      <!-- Pendants -->
+      <div class="tab-pane fade" id="pendantsTab">
+        <div class="row" id="pendantsRow"></div>
+        <div class="row mt-4" id="pendantsProducts" style="display:none;"></div>
+      </div>
+
+      <!-- Bracelets -->
+      <div class="tab-pane fade" id="braceletsTab">
+        <div class="row" id="braceletsRow"></div>
+        <div class="row mt-4" id="braceletsProducts" style="display:none;"></div>
+      </div>
+
+      <!-- Keychains -->
+      <div class="tab-pane fade" id="keychainsTab">
+        <div class="row" id="keychainsRow"></div>
+        <div class="row mt-4" id="keychainsProducts" style="display:none;"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>© 2025 Invique_world | Crafted with ❤️</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
